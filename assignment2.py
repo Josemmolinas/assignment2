@@ -1,10 +1,10 @@
 
 
 import socket
-import string
+
 
 class Assignment2:
-    string_isnumeric = string.isnumeric()
+    
     def __init__(self,age):
         self.age = age
     def sayWelcome(self,name):
@@ -45,7 +45,10 @@ class Assignment2:
         spl = 0
         num = 0
         for val in str[0:-1:1]:
-            
+            d = unicode('some string', 'utf-8')
+            d.isnumeric()
+            d = unicode('42','utf-8')
+            d.isnumeric()
             if(val.isnumeric()):
                 num +=1
             elif(val.isupper()):
